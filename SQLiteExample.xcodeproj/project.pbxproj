@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		5F9F20F2288FF3C100B499E4 /* SQLiteExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F20F1288FF3C100B499E4 /* SQLiteExampleApp.swift */; };
-		5F9F20F4288FF3C100B499E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F20F3288FF3C100B499E4 /* ContentView.swift */; };
+		5F9F20F4288FF3C100B499E4 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F20F3288FF3C100B499E4 /* TaskListView.swift */; };
 		5F9F20F6288FF3C300B499E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F20F5288FF3C300B499E4 /* Assets.xcassets */; };
-		5F9F20F9288FF3C300B499E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F20F8288FF3C300B499E4 /* Preview Assets.xcassets */; };
+		5F9F2101288FF5B600B499E4 /* UIPilot in Frameworks */ = {isa = PBXBuildFile; productRef = 5F9F2100288FF5B600B499E4 /* UIPilot */; };
+		5F9F2104288FF5E900B499E4 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5F9F2103288FF5E900B499E4 /* SQLite */; };
+		5F9F2106288FF64400B499E4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F2105288FF64400B499E4 /* Task.swift */; };
+		5F9F2108288FF6F400B499E4 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F2107288FF6F400B499E4 /* TaskListViewModel.swift */; };
+		5F9F210C2890047F00B499E4 /* TaskInsertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F210B2890047F00B499E4 /* TaskInsertView.swift */; };
+		5F9F210E289007C500B499E4 /* TaskInsertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F210D289007C500B499E4 /* TaskInsertViewModel.swift */; };
+		5F9F211028900AA600B499E4 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F210F28900AA600B499E4 /* TaskDataStore.swift */; };
+		5F9F21122890218400B499E4 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F21112890218400B499E4 /* TaskDetailView.swift */; };
+		5F9F21142890225C00B499E4 /* TaskDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F21132890225C00B499E4 /* TaskDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F9F20EE288FF3C100B499E4 /* SQLiteExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9F20F1288FF3C100B499E4 /* SQLiteExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteExampleApp.swift; sourceTree = "<group>"; };
-		5F9F20F3288FF3C100B499E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5F9F20F3288FF3C100B499E4 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		5F9F20F5288FF3C300B499E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5F9F20F8288FF3C300B499E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F9F2105288FF64400B499E4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5F9F2107288FF6F400B499E4 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		5F9F210B2890047F00B499E4 /* TaskInsertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInsertView.swift; sourceTree = "<group>"; };
+		5F9F210D289007C500B499E4 /* TaskInsertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInsertViewModel.swift; sourceTree = "<group>"; };
+		5F9F210F28900AA600B499E4 /* TaskDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataStore.swift; sourceTree = "<group>"; };
+		5F9F21112890218400B499E4 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		5F9F21132890225C00B499E4 /* TaskDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9F2104288FF5E900B499E4 /* SQLite in Frameworks */,
+				5F9F2101288FF5B600B499E4 /* UIPilot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,20 +67,50 @@
 		5F9F20F0288FF3C100B499E4 /* SQLiteExample */ = {
 			isa = PBXGroup;
 			children = (
-				5F9F20F1288FF3C100B499E4 /* SQLiteExampleApp.swift */,
-				5F9F20F3288FF3C100B499E4 /* ContentView.swift */,
 				5F9F20F5288FF3C300B499E4 /* Assets.xcassets */,
-				5F9F20F7288FF3C300B499E4 /* Preview Content */,
+				5F9F20F1288FF3C100B499E4 /* SQLiteExampleApp.swift */,
+				5F9F21162891172400B499E4 /* Data */,
+				5F9F21172891173000B499E4 /* View */,
+				5F9F21152891171A00B499E4 /* Model */,
+				5F9F21182891173900B499E4 /* ViewModel */,
 			);
 			path = SQLiteExample;
 			sourceTree = "<group>";
 		};
-		5F9F20F7288FF3C300B499E4 /* Preview Content */ = {
+		5F9F21152891171A00B499E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5F9F20F8288FF3C300B499E4 /* Preview Assets.xcassets */,
+				5F9F2105288FF64400B499E4 /* Task.swift */,
 			);
-			path = "Preview Content";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F9F21162891172400B499E4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F210F28900AA600B499E4 /* TaskDataStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5F9F21172891173000B499E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F20F3288FF3C100B499E4 /* TaskListView.swift */,
+				5F9F210B2890047F00B499E4 /* TaskInsertView.swift */,
+				5F9F21112890218400B499E4 /* TaskDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F9F21182891173900B499E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F2107288FF6F400B499E4 /* TaskListViewModel.swift */,
+				5F9F210D289007C500B499E4 /* TaskInsertViewModel.swift */,
+				5F9F21132890225C00B499E4 /* TaskDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +129,10 @@
 			dependencies = (
 			);
 			name = SQLiteExample;
+			packageProductDependencies = (
+				5F9F2100288FF5B600B499E4 /* UIPilot */,
+				5F9F2103288FF5E900B499E4 /* SQLite */,
+			);
 			productName = SQLiteExample;
 			productReference = 5F9F20EE288FF3C100B499E4 /* SQLiteExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,10 @@
 				Base,
 			);
 			mainGroup = 5F9F20E5288FF3C100B499E4;
+			packageReferences = (
+				5F9F20FF288FF5B600B499E4 /* XCRemoteSwiftPackageReference "UIPilot" */,
+				5F9F2102288FF5E900B499E4 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = 5F9F20EF288FF3C100B499E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +179,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F9F20F9288FF3C300B499E4 /* Preview Assets.xcassets in Resources */,
 				5F9F20F6288FF3C300B499E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F9F20F4288FF3C100B499E4 /* ContentView.swift in Sources */,
+				5F9F21122890218400B499E4 /* TaskDetailView.swift in Sources */,
+				5F9F210C2890047F00B499E4 /* TaskInsertView.swift in Sources */,
+				5F9F20F4288FF3C100B499E4 /* TaskListView.swift in Sources */,
+				5F9F210E289007C500B499E4 /* TaskInsertViewModel.swift in Sources */,
+				5F9F2108288FF6F400B499E4 /* TaskListViewModel.swift in Sources */,
+				5F9F2106288FF64400B499E4 /* Task.swift in Sources */,
+				5F9F211028900AA600B499E4 /* TaskDataStore.swift in Sources */,
 				5F9F20F2288FF3C100B499E4 /* SQLiteExampleApp.swift in Sources */,
+				5F9F21142890225C00B499E4 /* TaskDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +326,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SQLiteExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = N8562Q559W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SQLiteExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = N8562Q559W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -339,6 +399,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F9F20FF288FF5B600B499E4 /* XCRemoteSwiftPackageReference "UIPilot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/canopas/UIPilot.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		5F9F2102288FF5E900B499E4 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F9F2100288FF5B600B499E4 /* UIPilot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F9F20FF288FF5B600B499E4 /* XCRemoteSwiftPackageReference "UIPilot" */;
+			productName = UIPilot;
+		};
+		5F9F2103288FF5E900B499E4 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F9F2102288FF5E900B499E4 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F9F20E6288FF3C100B499E4 /* Project object */;
 }
