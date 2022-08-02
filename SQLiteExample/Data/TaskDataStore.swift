@@ -32,6 +32,7 @@ class TaskDataStore {
                 try FileManager.default.createDirectory(atPath: dirPath.path, withIntermediateDirectories: true, attributes: nil)
                 let dbPath = dirPath.appendingPathComponent(Self.STORE_NAME).path
                 db = try Connection(dbPath)
+                createTable()
                 print("SQLiteDataStore init successfully at: \(dbPath) ")
             } catch {
                 db = nil
@@ -40,7 +41,6 @@ class TaskDataStore {
         } else {
             db = nil
         }
-        createTable()
     }
 
     private func createTable() {
