@@ -40,9 +40,10 @@ class TaskDataStore {
         } else {
             db = nil
         }
+        createTable()
     }
 
-    func createTable() {
+    private func createTable() {
         guard let database = db else {
             return
         }

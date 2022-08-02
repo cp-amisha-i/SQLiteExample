@@ -35,9 +35,6 @@ struct SQLiteExampleApp: App {
                     )
                 }
             }
-            .onAppear {
-                TaskDataStore.shared.createTable()
-            }
         }
     }
 }
